@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Patrick&#39;s blog">
-    <title>Patrick&#39;s blog</title>
+    <title>归档: 2015/9 - Patrick&#39;s blog</title>
     <meta name="author" content="Patrick">
     
     
@@ -15,7 +15,7 @@
     <meta name="description">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Patrick's blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2015/09/index.html">
 <meta property="og:site_name" content="Patrick's blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -165,67 +165,9 @@
                         hasCoverMetaIn
                         ">
                 
+    
 
 <section class="postShorten-group main-content-wrap">
-    
-        
-        <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-            <div class="postShorten-wrap">
-                <div class="postShorten-header">
-                    <h1 class="postShorten-title" itemprop="headline">
-                        
-                                <a class="link-unstyled" href="/2015/10/28/一个node.js爬虫程序/">一个node.js爬虫程序</a>
-                        
-                    </h1>
-                    <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Wed Oct 28 2015 22:04:40 GMT+0800">
-	
-		    10月 28, 2015
-    	
-    </time>
-    
-</div>
-                </div>
-                
-                
-                    <div class="postShorten-content" itemprop="articleBody">
-                        <p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
-<pre><code><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)
-<span class="keyword">var</span> url = <span class="string">'http://www.imooc.com/learn/348'</span>
-
-http.get(url,<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>{
-    <span class="keyword">var</span> html = <span class="string">''</span>
-
-    res.on(<span class="string">'data'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>{
-        html += data
-    })
-
-    res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
-        <span class="built_in">console</span>.log(html)
-    })
-}).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
-    <span class="built_in">console</span>.log(<span class="string">'获取课程数据出错！'</span>)
-})
-</code></pre><p>启动程序：</p>
-<pre><code><span class="tag">node</span> <span class="tag">crawler</span><span class="class">.js</span>
-</code></pre><p>成功地爬到了慕课网的课程信息。</p>
-
-                        
-                            
-
-                        
-                        
-                            <p>
-                                <a href="/2015/10/28/一个node.js爬虫程序/#post-footer" class="postShorten-excerpt_link link">
-                                    注释和共享
-                                </a>
-                            </p>
-                        
-                    </div>
-                
-            </div>
-            
-        </article>
     
         
         <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
@@ -321,6 +263,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
 </div>
 
 </section>
+
 
 
                 <footer id="footer" class="main-content-wrap">

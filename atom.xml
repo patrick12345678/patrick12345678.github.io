@@ -50,10 +50,10 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
   
   <entry>
     <title><![CDATA[使用Hexo建立博客]]></title>
-    <link href="http://yoursite.com/2015/10/28/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://yoursite.com/2015/10/28/使用hexo建立博客 - 副本/</id>
-    <published>2015-10-28T14:02:10.481Z</published>
-    <updated>2015-10-27T12:41:28.464Z</updated>
+    <link href="http://yoursite.com/2015/09/22/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/</id>
+    <published>2015-09-22T07:30:16.000Z</published>
+    <updated>2015-10-28T14:22:27.208Z</updated>
     <content type="html"><![CDATA[<p>最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。</p>
 <ul>
 <li><strong>Hexo介绍</strong></li>
