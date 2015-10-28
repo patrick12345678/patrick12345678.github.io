@@ -175,13 +175,72 @@
                 <div class="postShorten-header">
                     <h1 class="postShorten-title" itemprop="headline">
                         
-                                <a class="link-unstyled" href="/2015/10/27/使用hexo建立博客/">使用Hexo建立博客</a>
+                                <a class="link-unstyled" href="/2015/10/28/一个node.js爬虫程序/">一个node.js爬虫程序</a>
                         
                     </h1>
                     <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Tue Oct 27 2015 20:41:28 GMT+0800">
+    <time itemprop="datePublished" content="Wed Oct 28 2015 22:04:40 GMT+0800">
 	
-		    10月 27, 2015
+		    10月 28, 2015
+    	
+    </time>
+    
+</div>
+                </div>
+                
+                
+                    <div class="postShorten-content" itemprop="articleBody">
+                        <p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
+<pre><code><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)
+<span class="keyword">var</span> url = <span class="string">'http://www.imooc.com/learn/348'</span>
+
+http.get(url,<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>{
+    <span class="keyword">var</span> html = <span class="string">''</span>
+
+    res.on(<span class="string">'data'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>{
+        html += data
+    })
+
+    res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+        <span class="built_in">console</span>.log(html)
+    })
+}).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(<span class="string">'获取课程数据出错！'</span>)
+})
+</code></pre><p>启动程序：</p>
+<pre><code><span class="tag">node</span> <span class="tag">crawler</span><span class="class">.js</span>
+</code></pre><p>成功地爬到了慕课网的课程信息。</p>
+
+                        
+                            
+
+                        
+                        
+                            <p>
+                                <a href="/2015/10/28/一个node.js爬虫程序/#post-footer" class="postShorten-excerpt_link link">
+                                    注释和共享
+                                </a>
+                            </p>
+                        
+                    </div>
+                
+            </div>
+            
+        </article>
+    
+        
+        <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+            <div class="postShorten-wrap">
+                <div class="postShorten-header">
+                    <h1 class="postShorten-title" itemprop="headline">
+                        
+                                <a class="link-unstyled" href="/2015/10/28/使用hexo建立博客 - 副本/">使用Hexo建立博客</a>
+                        
+                    </h1>
+                    <div class="postShorten-meta">
+    <time itemprop="datePublished" content="Wed Oct 28 2015 22:02:10 GMT+0800">
+	
+		    10月 28, 2015
     	
     </time>
     
@@ -243,7 +302,7 @@
                         
                         
                             <p>
-                                <a href="/2015/10/27/使用hexo建立博客/#post-footer" class="postShorten-excerpt_link link">
+                                <a href="/2015/10/28/使用hexo建立博客 - 副本/#post-footer" class="postShorten-excerpt_link link">
                                     注释和共享
                                 </a>
                             </p>

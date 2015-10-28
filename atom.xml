@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-27T12:41:28.464Z</updated>
+  <updated>2015-10-28T14:04:40.568Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,10 +15,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[一个node.js爬虫程序]]></title>
+    <link href="http://yoursite.com/2015/10/28/%E4%B8%80%E4%B8%AAnode.js%E7%88%AC%E8%99%AB%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://yoursite.com/2015/10/28/一个node.js爬虫程序/</id>
+    <published>2015-10-28T14:04:40.568Z</published>
+    <updated>2015-10-28T14:04:40.568Z</updated>
+    <content type="html"><![CDATA[<p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
+<pre><code><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)
+<span class="keyword">var</span> url = <span class="string">'http://www.imooc.com/learn/348'</span>
+
+http.get(url,<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>{
+    <span class="keyword">var</span> html = <span class="string">''</span>
+
+    res.on(<span class="string">'data'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>{
+        html += data
+    })
+
+    res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+        <span class="built_in">console</span>.log(html)
+    })
+}).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(<span class="string">'获取课程数据出错！'</span>)
+})
+</code></pre><p>启动程序：</p>
+<pre><code><span class="tag">node</span> <span class="tag">crawler</span><span class="class">.js</span>
+</code></pre><p>成功地爬到了慕课网的课程信息。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
+<pre><code><span class="keyword">var</span> http = <span class="built_in">require<]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[使用Hexo建立博客]]></title>
-    <link href="http://yoursite.com/2015/10/27/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2015/10/27/使用hexo建立博客/</id>
-    <published>2015-10-27T12:41:28.464Z</published>
+    <link href="http://yoursite.com/2015/10/28/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>http://yoursite.com/2015/10/28/使用hexo建立博客 - 副本/</id>
+    <published>2015-10-28T14:02:10.481Z</published>
     <updated>2015-10-27T12:41:28.464Z</updated>
     <content type="html"><![CDATA[<p>最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。</p>
 <ul>
