@@ -6,43 +6,25 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Patrick&#39;s blog">
-    <title>一个node.js爬虫程序 - Patrick&#39;s blog</title>
+    <title> - Patrick&#39;s blog</title>
     <meta name="author" content="Patrick">
     
     
         <link rel="alternative" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="通过一段很短的node.js代码，就可以实现一个小的爬虫程序。创建crawler.js程序：
-var http = require(&apos;http&apos;)
-var url = &apos;http://www.imooc.com/learn/348&apos;
-
-http.get(url,function(res){
-    var html = &apos;&apos;
-
-    res.on(&apos;data&apos;,function(data){">
+    <meta name="description" content="#Bootstap Layout最近发现使用 Bootstap Layout 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。Bootstap Layout 界面：  操作非常简单，只要从左边的元素栏中拖动需要的元素到右边的编辑区就可以了。元素栏有布局系统、基本 CSS、组件、JAVASCRIPT四类元素，Bootstrap支持的所有组件都可以在里面找到。布局系统的分栏可以自">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="一个node.js爬虫程序">
-<meta property="og:url" content="http://yoursite.com/2015/10/28/一个node.js爬虫程序/index.html">
+<meta property="og:title" content="Patrick's blog">
+<meta property="og:url" content="http://yoursite.com/2015/11/03/Bootstap Layout/index.html">
 <meta property="og:site_name" content="Patrick's blog">
-<meta property="og:description" content="通过一段很短的node.js代码，就可以实现一个小的爬虫程序。创建crawler.js程序：
-var http = require(&apos;http&apos;)
-var url = &apos;http://www.imooc.com/learn/348&apos;
-
-http.get(url,function(res){
-    var html = &apos;&apos;
-
-    res.on(&apos;data&apos;,function(data){">
-<meta property="og:updated_time" content="2015-10-28T14:04:40.568Z">
+<meta property="og:description" content="#Bootstap Layout最近发现使用 Bootstap Layout 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。Bootstap Layout 界面：  操作非常简单，只要从左边的元素栏中拖动需要的元素到右边的编辑区就可以了。元素栏有布局系统、基本 CSS、组件、JAVASCRIPT四类元素，Bootstrap支持的所有组件都可以在里面找到。布局系统的分栏可以自">
+<meta property="og:image" content="https://app.yinxiang.com/shard/s50/res/06494f1b-f1bc-4a41-87e9-60406a614add/1446453147222.png">
+<meta property="og:image" content="https://app.yinxiang.com/shard/s50/res/aa28ac29-a286-4dd2-871a-02807685a883/1446453946591.png">
+<meta property="og:image" content="https://app.yinxiang.com/shard/s50/res/de932080-34a8-46a6-8c38-92283b0beb67/1446454545708.png">
+<meta property="og:updated_time" content="2015-11-03T14:45:39.949Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个node.js爬虫程序">
-<meta name="twitter:description" content="通过一段很短的node.js代码，就可以实现一个小的爬虫程序。创建crawler.js程序：
-var http = require(&apos;http&apos;)
-var url = &apos;http://www.imooc.com/learn/348&apos;
-
-http.get(url,function(res){
-    var html = &apos;&apos;
-
-    res.on(&apos;data&apos;,function(data){">
+<meta name="twitter:title" content="Patrick's blog">
+<meta name="twitter:description" content="#Bootstap Layout最近发现使用 Bootstap Layout 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。Bootstap Layout 界面：  操作非常简单，只要从左边的元素栏中拖动需要的元素到右边的编辑区就可以了。元素栏有布局系统、基本 CSS、组件、JAVASCRIPT四类元素，Bootstrap支持的所有组件都可以在里面找到。布局系统的分栏可以自">
     
     
     
@@ -193,13 +175,13 @@ http.get(url,function(res){
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            一个node.js爬虫程序
+            (无标题)
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Wed Oct 28 2015 22:04:40 GMT+0800">
+    <time itemprop="datePublished" content="Tue Nov 03 2015 22:45:39 GMT+0800">
 	
-		    10月 28, 2015
+		    11月 03, 2015
     	
     </time>
     
@@ -208,26 +190,7 @@ http.get(url,function(res){
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
-<pre><code><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)
-<span class="keyword">var</span> url = <span class="string">'http://www.imooc.com/learn/348'</span>
-
-http.get(url,<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>{
-    <span class="keyword">var</span> html = <span class="string">''</span>
-
-    res.on(<span class="string">'data'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>{
-        html += data
-    })
-
-    res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
-        <span class="built_in">console</span>.log(html)
-    })
-}).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
-    <span class="built_in">console</span>.log(<span class="string">'获取课程数据出错！'</span>)
-})
-</code></pre><p>启动程序：</p>
-<pre><code><span class="tag">node</span> <span class="tag">crawler</span><span class="class">.js</span>
-</code></pre><p>成功地爬到了慕课网的课程信息。</p>
+            <p>#Bootstap Layout<br>最近发现使用 <em>Bootstap Layout</em> 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。<br><br><em>Bootstap Layout</em> 界面： <br><br><img src="https://app.yinxiang.com/shard/s50/res/06494f1b-f1bc-4a41-87e9-60406a614add/1446453147222.png" alt="Alt text"> <br><br>操作非常简单，只要从左边的元素栏中拖动需要的元素到右边的编辑区就可以了。元素栏有布局系统、基本 CSS、组件、JAVASCRIPT四类元素，Bootstrap支持的所有组件都可以在里面找到。布局系统的分栏可以自行设置，在本例中上面的导航为一行，下面的主题部分我是设为2，10的布局，这样后台的初步框架就实现了。<br><br>然后添加各种元素，例子页面使用的元素有：组件（导航栏、面包屑导航、下拉菜单、翻页）、基本 CSS（表格、搜索框、按钮）、Javascript（导航栏）。<br><br>完成后可以点击预览查看效果。<br><br>调整满意后可以拷贝出代码或者下载HTML文件：<br><br><img src="https://app.yinxiang.com/shard/s50/res/aa28ac29-a286-4dd2-871a-02807685a883/1446453946591.png" alt="Alt text"><br><br>最终的网页：<br><br><img src="https://app.yinxiang.com/shard/s50/res/de932080-34a8-46a6-8c38-92283b0beb67/1446454545708.png" alt="Alt text"><br></p>
 
             
                 
@@ -242,7 +205,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/03/Bootstap Layout/"  data-tooltip="(无标题)">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -250,7 +213,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/22/使用hexo建立博客 - 副本/" data-tooltip="使用Hexo建立博客">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/28/一个node.js爬虫程序/" data-tooltip="一个node.js爬虫程序">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -265,17 +228,17 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -317,7 +280,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/03/Bootstap Layout/"  data-tooltip="(无标题)">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -325,7 +288,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/09/22/使用hexo建立博客 - 副本/" data-tooltip="使用Hexo建立博客">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/28/一个node.js爬虫程序/" data-tooltip="一个node.js爬虫程序">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -340,17 +303,17 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -376,17 +339,17 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
                 <div id="share-options-bar" class="share-options-bar" data-behavior="4">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-google-plus"></i><span class="">分享到 Google+</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/10/28/一个node.js爬虫程序/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/11/03/Bootstap Layout/">
                 <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
             </a>
         </li>
