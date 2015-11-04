@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-03T14:45:39.949Z</updated>
+  <updated>2015-11-04T11:48:01.002Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,25 +15,114 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2015/11/03/Bootstap%20Layout/"/>
-    <id>http://yoursite.com/2015/11/03/Bootstap Layout/</id>
-    <published>2015-11-03T14:45:39.949Z</published>
-    <updated>2015-11-03T14:45:39.949Z</updated>
-    <content type="html"><![CDATA[<p>#Bootstap Layout<br>最近发现使用 <em>Bootstap Layout</em> 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。<br><br><em>Bootstap Layout</em> 界面： <br><br><img src="https://app.yinxiang.com/shard/s50/res/06494f1b-f1bc-4a41-87e9-60406a614add/1446453147222.png" alt="Alt text"> <br><br>操作非常简单，只要从左边的元素栏中拖动需要的元素到右边的编辑区就可以了。元素栏有布局系统、基本 CSS、组件、JAVASCRIPT四类元素，Bootstrap支持的所有组件都可以在里面找到。布局系统的分栏可以自行设置，在本例中上面的导航为一行，下面的主题部分我是设为2，10的布局，这样后台的初步框架就实现了。<br><br>然后添加各种元素，例子页面使用的元素有：组件（导航栏、面包屑导航、下拉菜单、翻页）、基本 CSS（表格、搜索框、按钮）、Javascript（导航栏）。<br><br>完成后可以点击预览查看效果。<br><br>调整满意后可以拷贝出代码或者下载HTML文件：<br><br><img src="https://app.yinxiang.com/shard/s50/res/aa28ac29-a286-4dd2-871a-02807685a883/1446453946591.png" alt="Alt text"><br><br>最终的网页：<br><br><img src="https://app.yinxiang.com/shard/s50/res/de932080-34a8-46a6-8c38-92283b0beb67/1446454545708.png" alt="Alt text"><br></p>
+    <title><![CDATA[弹幕视频播放器]]></title>
+    <link href="http://yoursite.com/2015/11/04/%E5%BC%B9%E5%B9%95%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    <id>http://yoursite.com/2015/11/04/弹幕视频播放器/</id>
+    <published>2015-11-04T07:30:16.000Z</published>
+    <updated>2015-11-04T11:48:01.002Z</updated>
+    <content type="html"><![CDATA[<p>弹幕已经出现在越来越多的视频网站当中，比如斗鱼TV、PPTV、BILIBILI，就连湖南卫视的综艺节目也有弹幕了！弹幕的实现有很多方式，今天介绍的是一款Html5弹幕视频播放器插件。几十K的一个小插件，就具备弹幕视频播放，接受用户发送彩色弹幕，实时调解弹幕显示效果等功能。<br>Danmmu Player意在使开发者能便捷的在网站中实现弹幕视频播放。</p>
+<h4 id="使用方法">使用方法</h4><p>1.新建一个HTML文件，命名为index.html，引入播放器的js和css文件，以及jQuery。</p>
+<pre><code><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"css/danmuplayer.css"</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/jquery-1.11.1.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"js/danmuplayer.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+</code></pre><p>2.新建一个div，这里把id值设为danmp</p>
+<pre><code>&lt;<span class="keyword">div</span> <span class="property">id</span>=<span class="string">"danmup"</span>&gt;&lt;/<span class="keyword">div</span>&gt;
+</code></pre><p>3.初始化DanmuPlayer，利用刚才新建的div.</p>
+<pre><code>$(<span class="string">"#danmup"</span>).danmuplayer({
+
+  src:<span class="string">"shsn.mp4"</span>,       <span class="comment">//视频源</span>
+
+  width:<span class="number">800</span>,            <span class="comment">//视频宽度</span>
+
+  height:<span class="number">445</span>            <span class="comment">//视频高度</span>
+
+});
+</code></pre><p>这样就可以在页面上看到播放器，发送弹幕了。</p>
+<p><center><img src="https://app.yinxiang.com/shard/s50/res/0efb3a94-bfa3-4ad0-a621-833d67e94718/1446604170582.png" alt="Alt text"></center></p>
+<p>这样实现的弹幕是一次性的，下次进入页面就没了，如果要实现弹幕的保存，则要引入数据库，建立与后端的连接。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>#Bootstap Layout<br>最近发现使用 <em>Bootstap Layout</em> 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。<br><br><em>Bootstap Layout</em> 界面： <br><br><img ]]>
+    <![CDATA[<p>弹幕已经出现在越来越多的视频网站当中，比如斗鱼TV、PPTV、BILIBILI，就连湖南卫视的综艺节目也有弹幕了！弹幕的实现有很多方式，今天介绍的是一款Html5弹幕视频播放器插件。几十K的一个小插件，就具备弹幕视频播放，接受用户发送彩色弹幕，实时调解弹幕显示效果等功能。<]]>
     </summary>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[在线聊天室]]></title>
+    <link href="http://yoursite.com/2015/11/04/%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9%E5%AE%A4/"/>
+    <id>http://yoursite.com/2015/11/04/在线聊天室/</id>
+    <published>2015-11-04T07:30:16.000Z</published>
+    <updated>2015-11-04T11:47:45.810Z</updated>
+    <content type="html"><![CDATA[<h4 id="socket-io介绍">socket.io介绍</h4><p>socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javascript实现。Nodejs实现websocket有多种方式，socket.io框架是其中比较简单易用的。</p>
+<h4 id="server与client通信方式">server与client通信方式</h4><p><center><img src="https://app.yinxiang.com/shard/s50/res/19a477f9-23c7-4279-8e46-50e9f75c19dc/1446618704121.png" alt="Alt text"></center></p>
+<p>上图中client1 和 server 描述通信过程，client2描述对其他的客户端，通过广播进行消息通信。</p>
+<ol>
+<li>client1向server发起连接请求</li>
+<li>server接受client的连接</li>
+<li>client1输入登陆用户名</li>
+<li>server返回欢迎语</li>
+<li>server通过广播告诉其他在线的用户，client1已登陆</li>
+<li>client1发送聊天信息</li>
+<li>server返回聊天信息(可省略)</li>
+<li>server通过广播告诉其他在线的用户，client1的聊天消息</li>
+<li>client1关闭连接，退出登陆</li>
+<li>server通过广播告诉其他在线的用户，client1已退出</li>
+</ol>
+<h4 id="server端实现">server端实现</h4><p>我们这里使用socket.io和express3的混合模式，让HTTP请求和WebSocket请求都使用3000端口。服务器端实现，只有一个核心文件app.js。具体编码可进入<a href="https://github.com/bsspirit/chat-websocket" target="_blank" rel="external">项目地址</a>下载。</p>
+<p>#####client端实现<br>客户端需要定义几个文件：chat.html, chat.js, jquery.min.js, main.css。<br>具体编码可进入<a href="https://github.com/bsspirit/chat-websocket" target="_blank" rel="external">项目地址</a>下载。</p>
+<p>项目地址：<a href="https://github.com/bsspirit/chat-websocket" target="_blank" rel="external">https://github.com/bsspirit/chat-websocket</a></p>
+<h4 id="下载，安装，启动服务器">下载，安装，启动服务器</h4><pre><code>git clone <span class="string">https:</span><span class="comment">//github.com/bsspirit/chat-websocket.git</span>
+npm install
+node app.js
+</code></pre><p>打开浏览器，使用多个窗口，可模拟多用户对话。<br><a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
+<p><center><img src="https://app.yinxiang.com/shard/s50/res/ab6080ef-5bde-4a1c-b486-1d202e1bf6b5/1446617749426.png" alt="Alt text"></center></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h4 id="socket-io介绍">socket.io介绍</h4><p>socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javas]]>
+    </summary>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Bootstap Layout]]></title>
+    <link href="http://yoursite.com/2015/11/03/Bootstap%20Layout/"/>
+    <id>http://yoursite.com/2015/11/03/Bootstap Layout/</id>
+    <published>2015-11-03T07:30:16.000Z</published>
+    <updated>2015-11-04T11:49:33.353Z</updated>
+    <content type="html"><![CDATA[<p>最近发现使用 <em>Bootstap Layout</em> 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。<br><br><em>Bootstap Layout</em> 界面： <br></p>
+<p><center><img src="https://app.yinxiang.com/shard/s50/res/06494f1b-f1bc-4a41-87e9-60406a614add/1446453147222.png" alt="Alt text"> <br></center></p>
+<p>操作非常简单，只要从左边的元素栏中拖动需要的元素到右边的编辑区就可以了。元素栏有布局系统、基本 CSS、组件、JAVASCRIPT四类元素，Bootstrap支持的所有组件都可以在里面找到。布局系统的分栏可以自行设置，在本例中上面的导航为一行，下面的主题部分我是设为2，10的布局，这样后台的初步框架就实现了。<br><br>然后添加各种元素，例子页面使用的元素有：组件（导航栏、面包屑导航、下拉菜单、翻页）、基本 CSS（表格、搜索框、按钮）、Javascript（导航栏）。<br><br>完成后可以点击预览查看效果。<br><br>调整满意后可以拷贝出代码或者下载HTML文件：<br></p>
+<p><center><img src="https://app.yinxiang.com/shard/s50/res/aa28ac29-a286-4dd2-871a-02807685a883/1446453946591.png" alt="Alt text"><br></center></p>
+<p>最终的网页：<br></p>
+<p><center><img src="https://app.yinxiang.com/shard/s50/res/de932080-34a8-46a6-8c38-92283b0beb67/1446454545708.png" alt="Alt text"><br></center></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近发现使用 <em>Bootstap Layout</em> 可以实现可视化设计网页，刚好拿最近做的一个视频直播系统后台的原型练手。<br><br><em>Bootstap Layout</em> 界面： <br></p>
+<p><center><img src="htt]]>
+    </summary>
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[一个node.js爬虫程序]]></title>
-    <link href="http://yoursite.com/2015/10/28/%E4%B8%80%E4%B8%AAnode.js%E7%88%AC%E8%99%AB%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://yoursite.com/2015/10/28/一个node.js爬虫程序/</id>
-    <published>2015-10-28T14:04:40.568Z</published>
-    <updated>2015-10-28T14:04:40.568Z</updated>
+    <link href="http://yoursite.com/2015/10/15/%E4%B8%80%E4%B8%AAnode.js%E7%88%AC%E8%99%AB%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://yoursite.com/2015/10/15/一个node.js爬虫程序/</id>
+    <published>2015-10-15T07:30:16.000Z</published>
+    <updated>2015-11-03T14:49:24.100Z</updated>
     <content type="html"><![CDATA[<p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
 <pre><code><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)
 <span class="keyword">var</span> url = <span class="string">'http://www.imooc.com/learn/348'</span>
@@ -60,6 +149,10 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
 <pre><code><span class="keyword">var</span> http = <span class="built_in">require<]]>
     </summary>
     
+      <category term="program" scheme="http://yoursite.com/tags/program/"/>
+    
+      <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
+    
   </entry>
   
   <entry>
@@ -67,7 +160,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
     <link href="http://yoursite.com/2015/09/22/%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%20-%20%E5%89%AF%E6%9C%AC/"/>
     <id>http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/</id>
     <published>2015-09-22T07:30:16.000Z</published>
-    <updated>2015-10-28T14:22:27.208Z</updated>
+    <updated>2015-11-03T14:49:24.943Z</updated>
     <content type="html"><![CDATA[<p>最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。</p>
 <ul>
 <li><strong>Hexo介绍</strong></li>
@@ -122,6 +215,10 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
 </ul>
 <p>Hexo 是一个快]]>
     </summary>
+    
+      <category term="blog#文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格" scheme="http://yoursite.com/tags/blog-%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE%EF%BC%8C%E5%8F%AF%E7%A9%BA%EF%BC%8C%E5%A4%9A%E6%A0%87%E7%AD%BE%E8%AF%B7%E7%94%A8%E6%A0%BC%E5%BC%8F-tag1-tag2-tag3-%EF%BC%8C%E6%B3%A8%E6%84%8F-%E5%90%8E%E9%9D%A2%E6%9C%89%E4%B8%AA%E7%A9%BA%E6%A0%BC/"/>
+    
+      <category term="tech" scheme="http://yoursite.com/categories/tech/"/>
     
   </entry>
   

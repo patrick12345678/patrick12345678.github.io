@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Patrick&#39;s blog">
-    <title>归档: 2015/10 - Patrick&#39;s blog</title>
+    <title>标签: blog#文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格 - Patrick&#39;s blog</title>
     <meta name="author" content="Patrick">
     
     
@@ -15,7 +15,7 @@
     <meta name="description">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Patrick's blog">
-<meta property="og:url" content="http://yoursite.com/archives/2015/10/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/blog-文章标签，可空，多标签请用格式-tag1-tag2-tag3-，注意-后面有个空格/index.html">
 <meta property="og:site_name" content="Patrick's blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -175,13 +175,13 @@
                 <div class="postShorten-header">
                     <h1 class="postShorten-title" itemprop="headline">
                         
-                                <a class="link-unstyled" href="/2015/10/15/一个node.js爬虫程序/">一个node.js爬虫程序</a>
+                                <a class="link-unstyled" href="/2015/09/22/使用hexo建立博客 - 副本/">使用Hexo建立博客</a>
                         
                     </h1>
                     <div class="postShorten-meta">
-    <time itemprop="datePublished" content="Thu Oct 15 2015 15:30:16 GMT+0800">
+    <time itemprop="datePublished" content="Tue Sep 22 2015 15:30:16 GMT+0800">
 	
-		    10月 15, 2015
+		    9月 22, 2015
     	
     </time>
     
@@ -196,26 +196,52 @@
                 
                 
                     <div class="postShorten-content" itemprop="articleBody">
-                        <p>通过一段很短的node.js代码，就可以实现一个小的爬虫程序。<br>创建crawler.js程序：</p>
-<pre><code><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)
-<span class="keyword">var</span> url = <span class="string">'http://www.imooc.com/learn/348'</span>
-
-http.get(url,<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>{
-    <span class="keyword">var</span> html = <span class="string">''</span>
-
-    res.on(<span class="string">'data'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>{
-        html += data
-    })
-
-    res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
-        <span class="built_in">console</span>.log(html)
-    })
-}).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
-    <span class="built_in">console</span>.log(<span class="string">'获取课程数据出错！'</span>)
-})
-</code></pre><p>启动程序：</p>
-<pre><code><span class="tag">node</span> <span class="tag">crawler</span><span class="class">.js</span>
-</code></pre><p>成功地爬到了慕课网的课程信息。</p>
+                        <p>最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。</p>
+<ul>
+<li><strong>Hexo介绍</strong></li>
+</ul>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<ul>
+<li><strong>Hexo博客建立</strong></li>
+</ul>
+<p>简洁高效，如同官网的介绍。安装过程非常简单，官网有非常详细的文档，安装文档；并且还是中文的哦！</p>
+<ul>
+<li><strong>部署至github</strong></li>
+</ul>
+<p>安装完成后需要部署至github，根据官网的介绍，首先进行配置</p>
+<ul>
+<li><strong>hexo-git配置</strong></li>
+</ul>
+<p>安装hexo-delopyer-git<br>安装hexo关于git管理组件：hexo-delopyer-git</p>
+<ul>
+<li><strong>修改配置文件</strong></li>
+</ul>
+<p>找到根目录下的_config.yml，修改配置</p>
+<pre><code><span class="attribute">deploy</span>:
+    <span class="attribute">type</span>: git
+    <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/pyrinelaw/pyrinelaw.github.io.git</span>
+    <span class="attribute">branch</span>: master
+</code></pre><ul>
+<li><p><strong>上传操作</strong></p>
+<p> hexo d</p>
+</li>
+</ul>
+<p>部署时遇到了环境变量问题报错，添加以后成功部署。</p>
+<pre><code>Error: spawn git ENOENT
+    at exports._errnoException (util<span class="class">.js</span>:<span class="number">746</span>:<span class="number">11</span>)
+    at Process<span class="class">.ChildProcess</span>._handle<span class="class">.onexit</span> (child_process<span class="class">.js</span>:<span class="number">1053</span>:<span class="number">32</span>)
+    at child_process<span class="class">.js</span>:<span class="number">1144</span>:<span class="number">20</span>)
+    at process._tickCallback (node<span class="class">.js</span>:<span class="number">355</span>:<span class="number">11</span>)
+</code></pre><p>添加Git与git管理库的环境变量即可；</p>
+<pre><code>D:<span class="command">\Git</span><span class="command">\bin</span>;D:<span class="command">\Git</span><span class="command">\libexec</span><span class="command">\git</span>-core
+</code></pre><ul>
+<li><p><strong>再次部署</strong></p>
+<p> hexo d</p>
+</li>
+<li><p><strong>修改主题</strong></p>
+</li>
+</ul>
+<p>hexo-theme提供了很多漂亮的博客主题，选择tranquilpeak，修改配置文件_config.yml，改 theme variable 为 tranquilpeak即可。重新部署就是新的主题了。</p>
 
                         
                             
@@ -223,7 +249,7 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
                         
                         
                             <p>
-                                <a href="/2015/10/15/一个node.js爬虫程序/#post-footer" class="postShorten-excerpt_link link">
+                                <a href="/2015/09/22/使用hexo建立博客 - 副本/#post-footer" class="postShorten-excerpt_link link">
                                     注释和共享
                                 </a>
                             </p>
@@ -243,7 +269,6 @@ http.get(url,<span class="function"><span class="keyword">function</span>(<span 
 </div>
 
 </section>
-
 
 
                 <footer id="footer" class="main-content-wrap">

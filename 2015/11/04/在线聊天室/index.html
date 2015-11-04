@@ -6,46 +6,30 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Patrick&#39;s blog">
-    <title>使用Hexo建立博客 - Patrick&#39;s blog</title>
+    <title>在线聊天室 - Patrick&#39;s blog</title>
     <meta name="author" content="Patrick">
     
     
         <link rel="alternative" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。
-
-Hexo介绍
-
-Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-
-Hexo博客建立
-
-简洁高效，如同官网的介绍。安装过程非常简单，官网有非常详细">
+    <meta name="description" content="socket.io介绍socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javascript实现。Nodejs实现websocket有多种方式，socket.io框架是其中比较简单易用的。
+server与client通信方式
+上图中client1 和 serv">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="使用Hexo建立博客">
-<meta property="og:url" content="http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/index.html">
+<meta property="og:title" content="在线聊天室">
+<meta property="og:url" content="http://yoursite.com/2015/11/04/在线聊天室/index.html">
 <meta property="og:site_name" content="Patrick's blog">
-<meta property="og:description" content="最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。
-
-Hexo介绍
-
-Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-
-Hexo博客建立
-
-简洁高效，如同官网的介绍。安装过程非常简单，官网有非常详细">
-<meta property="og:updated_time" content="2015-11-03T14:49:24.943Z">
+<meta property="og:description" content="socket.io介绍socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javascript实现。Nodejs实现websocket有多种方式，socket.io框架是其中比较简单易用的。
+server与client通信方式
+上图中client1 和 serv">
+<meta property="og:image" content="https://app.yinxiang.com/shard/s50/res/19a477f9-23c7-4279-8e46-50e9f75c19dc/1446618704121.png">
+<meta property="og:image" content="https://app.yinxiang.com/shard/s50/res/ab6080ef-5bde-4a1c-b486-1d202e1bf6b5/1446617749426.png">
+<meta property="og:updated_time" content="2015-11-04T11:47:45.810Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Hexo建立博客">
-<meta name="twitter:description" content="最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。
-
-Hexo介绍
-
-Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
-
-Hexo博客建立
-
-简洁高效，如同官网的介绍。安装过程非常简单，官网有非常详细">
+<meta name="twitter:title" content="在线聊天室">
+<meta name="twitter:description" content="socket.io介绍socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javascript实现。Nodejs实现websocket有多种方式，socket.io框架是其中比较简单易用的。
+server与client通信方式
+上图中client1 和 serv">
     
     
     
@@ -196,19 +180,19 @@ Hexo博客建立
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            使用Hexo建立博客
+            在线聊天室
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Tue Sep 22 2015 15:30:16 GMT+0800">
+    <time itemprop="datePublished" content="Wed Nov 04 2015 15:30:16 GMT+0800">
 	
-		    9月 22, 2015
+		    11月 04, 2015
     	
     </time>
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/categories/tech/">tech</a>
+    <a class="category-link" href="/categories/tools/">tools</a>
 
 
     
@@ -217,52 +201,29 @@ Hexo博客建立
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>最近想建博客，又发现了一个不错的博客框架Hexo，于是尝试着使用它，中途遇到了一些坑，但是最终还是成功了建立了博客，下面就是我使用Hexo建博客的过程。</p>
-<ul>
-<li><strong>Hexo介绍</strong></li>
-</ul>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<ul>
-<li><strong>Hexo博客建立</strong></li>
-</ul>
-<p>简洁高效，如同官网的介绍。安装过程非常简单，官网有非常详细的文档，安装文档；并且还是中文的哦！</p>
-<ul>
-<li><strong>部署至github</strong></li>
-</ul>
-<p>安装完成后需要部署至github，根据官网的介绍，首先进行配置</p>
-<ul>
-<li><strong>hexo-git配置</strong></li>
-</ul>
-<p>安装hexo-delopyer-git<br>安装hexo关于git管理组件：hexo-delopyer-git</p>
-<ul>
-<li><strong>修改配置文件</strong></li>
-</ul>
-<p>找到根目录下的_config.yml，修改配置</p>
-<pre><code><span class="attribute">deploy</span>:
-    <span class="attribute">type</span>: git
-    <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/pyrinelaw/pyrinelaw.github.io.git</span>
-    <span class="attribute">branch</span>: master
-</code></pre><ul>
-<li><p><strong>上传操作</strong></p>
-<p> hexo d</p>
-</li>
-</ul>
-<p>部署时遇到了环境变量问题报错，添加以后成功部署。</p>
-<pre><code>Error: spawn git ENOENT
-    at exports._errnoException (util<span class="class">.js</span>:<span class="number">746</span>:<span class="number">11</span>)
-    at Process<span class="class">.ChildProcess</span>._handle<span class="class">.onexit</span> (child_process<span class="class">.js</span>:<span class="number">1053</span>:<span class="number">32</span>)
-    at child_process<span class="class">.js</span>:<span class="number">1144</span>:<span class="number">20</span>)
-    at process._tickCallback (node<span class="class">.js</span>:<span class="number">355</span>:<span class="number">11</span>)
-</code></pre><p>添加Git与git管理库的环境变量即可；</p>
-<pre><code>D:<span class="command">\Git</span><span class="command">\bin</span>;D:<span class="command">\Git</span><span class="command">\libexec</span><span class="command">\git</span>-core
-</code></pre><ul>
-<li><p><strong>再次部署</strong></p>
-<p> hexo d</p>
-</li>
-<li><p><strong>修改主题</strong></p>
-</li>
-</ul>
-<p>hexo-theme提供了很多漂亮的博客主题，选择tranquilpeak，修改配置文件_config.yml，改 theme variable 为 tranquilpeak即可。重新部署就是新的主题了。</p>
+            <h4 id="socket-io介绍">socket.io介绍</h4><p>socket.io一个是基于Nodejs架构体系的，支持websocket的协议用于时时通信的一个软件包。socket.io 给跨浏览器构建实时应用提供了完整的封装，socket.io完全由javascript实现。Nodejs实现websocket有多种方式，socket.io框架是其中比较简单易用的。</p>
+<h4 id="server与client通信方式">server与client通信方式</h4><p><center><img src="https://app.yinxiang.com/shard/s50/res/19a477f9-23c7-4279-8e46-50e9f75c19dc/1446618704121.png" alt="Alt text"></center></p>
+<p>上图中client1 和 server 描述通信过程，client2描述对其他的客户端，通过广播进行消息通信。</p>
+<ol>
+<li>client1向server发起连接请求</li>
+<li>server接受client的连接</li>
+<li>client1输入登陆用户名</li>
+<li>server返回欢迎语</li>
+<li>server通过广播告诉其他在线的用户，client1已登陆</li>
+<li>client1发送聊天信息</li>
+<li>server返回聊天信息(可省略)</li>
+<li>server通过广播告诉其他在线的用户，client1的聊天消息</li>
+<li>client1关闭连接，退出登陆</li>
+<li>server通过广播告诉其他在线的用户，client1已退出</li>
+</ol>
+<h4 id="server端实现">server端实现</h4><p>我们这里使用socket.io和express3的混合模式，让HTTP请求和WebSocket请求都使用3000端口。服务器端实现，只有一个核心文件app.js。具体编码可进入<a href="https://github.com/bsspirit/chat-websocket" target="_blank" rel="external">项目地址</a>下载。</p>
+<p>#####client端实现<br>客户端需要定义几个文件：chat.html, chat.js, jquery.min.js, main.css。<br>具体编码可进入<a href="https://github.com/bsspirit/chat-websocket" target="_blank" rel="external">项目地址</a>下载。</p>
+<p>项目地址：<a href="https://github.com/bsspirit/chat-websocket" target="_blank" rel="external">https://github.com/bsspirit/chat-websocket</a></p>
+<h4 id="下载，安装，启动服务器">下载，安装，启动服务器</h4><pre><code>git clone <span class="string">https:</span><span class="comment">//github.com/bsspirit/chat-websocket.git</span>
+npm install
+node app.js
+</code></pre><p>打开浏览器，使用多个窗口，可模拟多用户对话。<br><a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
+<p><center><img src="https://app.yinxiang.com/shard/s50/res/ab6080ef-5bde-4a1c-b486-1d202e1bf6b5/1446617749426.png" alt="Alt text"></center></p>
 
             
                 
@@ -275,7 +236,7 @@ Hexo博客建立
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">标签</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/blog-文章标签，可空，多标签请用格式-tag1-tag2-tag3-，注意-后面有个空格/">blog#文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/tools/">tools</a>
 
             </div>
         
@@ -284,7 +245,7 @@ Hexo博客建立
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/15/一个node.js爬虫程序/"  data-tooltip="一个node.js爬虫程序">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/04/弹幕视频播放器/"  data-tooltip="弹幕视频播放器">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -292,7 +253,7 @@ Hexo博客建立
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/03/Bootstap Layout/" data-tooltip="Bootstap Layout">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -307,17 +268,17 @@ Hexo博客建立
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -359,7 +320,7 @@ Hexo博客建立
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/10/15/一个node.js爬虫程序/"  data-tooltip="一个node.js爬虫程序">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/04/弹幕视频播放器/"  data-tooltip="弹幕视频播放器">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -367,7 +328,7 @@ Hexo博客建立
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/11/03/Bootstap Layout/" data-tooltip="Bootstap Layout">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                     <i class="fa fa-angle-right"></i>
@@ -382,17 +343,17 @@ Hexo博客建立
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -418,17 +379,17 @@ Hexo博客建立
                 <div id="share-options-bar" class="share-options-bar" data-behavior="4">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-google-plus"></i><span class="">分享到 Google+</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/09/22/使用hexo建立博客 - 副本/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yoursite.com/2015/11/04/在线聊天室/">
                 <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
             </a>
         </li>
